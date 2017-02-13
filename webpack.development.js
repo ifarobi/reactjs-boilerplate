@@ -6,9 +6,6 @@ var webpackConfig = require('./config/webpack/development.js');
 
 var server = new WebpackDevServer(webpack(webpackConfig), {
   hot: true,
-  headers : {
-    "x-om-telolet-om" : "telolet"
-  },
   publicPath : webpackConfig.output.publicPath,
   historyApiFallback : true
 });
