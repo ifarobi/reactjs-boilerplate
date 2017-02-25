@@ -13,5 +13,5 @@ var server = new WebpackDevServer(webpack(webpackConfig), {
 server.listen(appConfig.port, appConfig.host, function(err){
   if(err) console.error(err);
 
-  console.log('Listening to ?:?', appConfig.host, appConfig.port);
+  console.log('Listening to %s:%s', appConfig.host, appConfig.port);
 });

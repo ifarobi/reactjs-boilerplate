@@ -7,7 +7,7 @@ class App extends Component{
       <div>
         <div>
           <Link to="/">Home</Link>
-          <Link to="/profile">Profile</Link>
+          <Link to="/about">About</Link>
           <Link to="/messages">Messages</Link>
         </div>
         {this.props.children || <h2>Hello from Home</h2>}
